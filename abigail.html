@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-csg-meshs/index.js"></script>
+  </head>
+
+
+  <body>
+    <a-scene>
+        <a-box id="A-Top" position="-1.12 1.57083 -3" rotation="" color="#4CC3D9" material="" geometry="primitive: cone" scale="0.33 0.79 0.39"></a-box>
+        <a-cylinder id="A-Left" position="-1.4941 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.5" rotation="0 0 -14.999999999999998"></a-cylinder>      
+        <a-cylinder id="A-Right" position="-0.75774 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.5" rotation="0 0 14.999999999999998"></a-cylinder>
+        <a-cylinder id="A-Line" position="-1.09219 0.74065 -3.03009" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9" geometry="" scale="0.27 0.86 0.3" rotation="0 0 -79.48"></a-cylinder>
+
+        <a-cylinder id="B-Line" position="-0.13803 0.86446 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.97 0.49" rotation="" visible=""></a-cylinder>       
+        <a-box id="b-circle" position="0.42224 0.57921 -3" rotation="" color="#4CC3D9" material="" scale="0.37 0.35 0.47" geometry="primitive: torus"></a-box>
+
+        <a-box id="i-dot" position="1.27135 1.32513 -3" animation="property: position; to: 1.27135 2.500 -3; dur: 2000; easing: linear; loop: true" rotation="" color="#4CC3D9" material="" scale="0.17 0.18 0.3" geometry="primitive: torusKnot"></a-box>
+        <a-cylinder id="i-Line" position="1.26877 0.52605 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.48 0.3" rotation="" visible=""></a-cylinder>
+
+        <a-box id="G" position="2.12005 0.93718 -3" rotation="" color="#4CC3D9" material="" scale="0.29 0.24 0.34" geometry="primitive: torus"></a-box>        
+        <a-box id="g1" position="2.45897 0.53177 -3" rotation="" color="#4CC3D9" material="" scale="0.23 0.2 0.19" geometry="primitive: sphere"></a-box>
+        <a-box id="g2" position="2.19497 0.18748 -3.09043" rotation="" color="#4CC3D9" material="" scale="0.22 0.2 0.24" geometry="primitive: sphere" visible=""></a-box>
+        <a-box id="g3" position="1.74019 0.16056 -3" rotation="" color="#4CC3D9" material="color: #75A4B6" scale="0.13 0.12 0.18" geometry="primitive: sphere" visible=""></a-box>
+
+        <a-box id="a" position="3.23855 0.44687 -3" rotation="" color="#4CC3D9" material="" scale="0.35 0.37 0.33" geometry="primitive: dodecahedron"></a-box>
+        <a-box position="3.5288 0.46447 -3" rotation="" color="#4CC3D9" material="color: #75A4B6" geometry="" scale="0.2 0.82 0.2" id="a-line"></a-box>
+
+        <a-box id="i2-dot" position="4.08865 1.32513 -3" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 1500" color="#4CC3D9" material="color: #7fbb3a" scale="0.22 0.37 0.24" geometry="primitive: octahedron"></a-box>
+        <a-cylinder id="i2-Line" position="4.07872 0.41343 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.43 0.3" rotation="" visible=""></a-cylinder>
+
+        <a-cylinder id="l-Line" position="4.71326 1.285 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9; blending: none" geometry="primitive: torusKnot" scale="0.12 -1.1 0.3" rotation="0 -45 0" visible=""></a-cylinder>       
+        <a-sky color="#524E69"></a-sky>
+    </a-scene>
+  </body>
+
+  
+</html>
