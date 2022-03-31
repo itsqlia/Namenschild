@@ -7,29 +7,30 @@
 
   <body>
     <a-scene>
-        <a-box id="A-Top" position="-1.12 1.57083 -3" rotation="" color="#4CC3D9" material="" geometry="primitive: cone" scale="0.33 0.79 0.39"></a-box>
-        <a-cylinder id="A-Left" position="-1.4941 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.5" rotation="0 0 -14.999999999999998"></a-cylinder>      
-        <a-cylinder id="A-Right" position="-0.75774 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.5" rotation="0 0 14.999999999999998"></a-cylinder>
-        <a-cylinder id="A-Line" position="-1.09219 0.74065 -3.03009" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9" geometry="" scale="0.27 0.86 0.3" rotation="0 0 -79.48"></a-cylinder>
+        <a-box id="A-Top" position="-2.50328 1.57083 -3" rotation="" color="#4CC3D9" material="" geometry="primitive: cone" scale="0.33 0.75 0.34"></a-box>
+        <a-cylinder id="A-Left" position="-2.8975 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.3" rotation="0 0 -14.999999999999998"></a-cylinder>      
+        <a-cylinder id="A-Right" position="-2.13626 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.3" rotation="0 0 14.999999999999998"></a-cylinder>
+        <a-cylinder id="A-Line" position="-3.871 0.548 -3.033" animation="property: position; to: -2.44396 0.74065 -3.02324; dur: 2200; easing: linear" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9" geometry="" scale="0.24 0.94 0.27" rotation="0 0 -79.48"></a-cylinder>
 
-        <a-cylinder id="B-Line" position="-0.13803 0.86446 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.97 0.49" rotation="" visible=""></a-cylinder>       
-        <a-box id="b-circle" position="0.42224 0.57921 -3" rotation="" color="#4CC3D9" material="" scale="0.37 0.35 0.47" geometry="primitive: torus"></a-box>
+        <a-cylinder id="B-Line" position="-1.54143 0.86446 -3.00732" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.8 0.3" rotation="" visible=""></a-cylinder>       
+        <a-box id="b-circle" position="-1.09065 0.63207 -3" rotation="" animation="property: rotation; to: 0 360 0; loop: true; dur: 1300;" color="#4CC3D9" material="#C30000" animation="property: color; to: material.color" scale="0.33 0.34 0.32" geometry="primitive: torus"></a-box>
 
-        <a-box id="i-dot" position="1.27135 1.32513 -3" animation="property: position; to: 1.27135 2.500 -3; dur: 2000; easing: linear; loop: true" rotation="" color="#4CC3D9" material="" scale="0.17 0.18 0.3" geometry="primitive: torusKnot"></a-box>
-        <a-cylinder id="i-Line" position="1.26877 0.52605 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.48 0.3" rotation="" visible=""></a-cylinder>
+        <a-box id="i-dot" position="-0.305 1.8 -3" animation="property: position; to: -0.305 1.160 -3; dur: 1000; easing: easeInCirc; loop: true; dir: alternate" rotation="" color="#4CC3D9" material="" scale="0.17 0.18 0.3" geometry="primitive: torusKnot" visible=""></a-box>
+        <a-cylinder id="i-Line" position="-0.31877 0.52605 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.45 0.3" rotation="" visible=""></a-cylinder>
 
-        <a-box id="G" position="2.12005 0.93718 -3" rotation="" color="#4CC3D9" material="" scale="0.29 0.24 0.34" geometry="primitive: torus"></a-box>        
-        <a-box id="g1" position="2.45897 0.53177 -3" rotation="" color="#4CC3D9" material="" scale="0.23 0.2 0.19" geometry="primitive: sphere"></a-box>
-        <a-box id="g2" position="2.19497 0.18748 -3.09043" rotation="" color="#4CC3D9" material="" scale="0.22 0.2 0.24" geometry="primitive: sphere" visible=""></a-box>
-        <a-box id="g3" position="1.74019 0.16056 -3" rotation="" color="#4CC3D9" material="color: #75A4B6" scale="0.13 0.12 0.18" geometry="primitive: sphere" visible=""></a-box>
+        <a-box id="G" position="0.54993 0.93718 -3" rotation="" color="#4CC3D9" material="" scale="0.27 0.24 0.32" geometry="primitive: torus"></a-box>        
+        <a-box id="gbig" position="1 0.53 -3" animation="property: position; to: 1 -0.1 -3; dur: 1000; delay: 600; easing: easeInQuart; loop: true; dir: alternate" rotation="" color="#4CC3D9" material="" scale="0.2 0.19 0.19" geometry="primitive: sphere"></a-box>        
+        <a-box id="gmedium" position="0.63 0.15 -3" animation="property: position; to: 0.63 -0.45 -3; dur: 1000; delay: 300; easing: easeInQuart; loop: true; dir: alternate" rotation="" color="#4CC3D9" material="" scale="0.2 0.2 0.2" geometry="primitive: sphere" visible=""></a-box>
+        <a-box id="gsmall" position="0.20 0.20 -3" animation="property: position; to: 0.20 -0.4 -3; dur: 1000; easing: easeInQuart; loop: true; dir: alternate" rotation="" color="#4CC3D9" material="color: #75A4B6" scale="0.13 0.13 0.12" geometry="primitive: sphere" visible=""></a-box>
 
-        <a-box id="a" position="3.23855 0.44687 -3" rotation="" color="#4CC3D9" material="" scale="0.35 0.37 0.33" geometry="primitive: dodecahedron"></a-box>
-        <a-box position="3.5288 0.46447 -3" rotation="" color="#4CC3D9" material="color: #75A4B6" geometry="" scale="0.2 0.82 0.2" id="a-line"></a-box>
+        <a-box id="a" position="1.75282 0.44024 -3" rotation="" animation="property: rotation; to: 0 360 0; loop: true; dur: 9500" color="#4CC3D9" material="" scale="0.35 0.35 0.35" geometry="primitive: dodecahedron"></a-box>
+        <a-box id="a-line" position="2.061 0.43365 -3" rotation="" color="#4CC3D9" material="color: #75A4B6" geometry="" scale="0.2 0.66 0.2" ></a-box>
 
-        <a-box id="i2-dot" position="4.08865 1.32513 -3" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 1500" color="#4CC3D9" material="color: #7fbb3a" scale="0.22 0.37 0.24" geometry="primitive: octahedron"></a-box>
-        <a-cylinder id="i2-Line" position="4.07872 0.41343 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.43 0.3" rotation="" visible=""></a-cylinder>
+        <a-box id="i2-dot" position="2.56537 1.32513 -3" rotation="0 92.20711823582201 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 1500" color="#4CC3D9" material="color: #7fbb3a" scale="0.22 0.41 0.24" geometry="primitive: octahedron" visible=""></a-box>
+        <a-cylinder id="i2-Line" position="2.56915 0.36531 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #75A4B6" geometry="" scale="0.28 0.41 0.3" rotation="" visible=""></a-cylinder>
 
-        <a-cylinder id="l-Line" position="4.71326 1.285 -3" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9; blending: none" geometry="primitive: torusKnot" scale="0.12 -1.1 0.3" rotation="0 -45 0" visible=""></a-cylinder>       
+        <a-cylinder id="l-Line" position="3.072 4.353 -2.980" animation="property: position; to: 3.07209 1.285 -2.97974; dur: 2200; easing: linear; dir: alternate" radius="0.5" height="1.5" color="#FFC65D" material="color: #4CC3D9; blending: none" geometry="primitive: torusKnot" scale="0.1 -1.16 0.16" rotation="0 -45 0" visible=""></a-cylinder>
+
         <a-sky color="#524E69"></a-sky>
     </a-scene>
   </body>
